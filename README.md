@@ -1,95 +1,137 @@
-<img src="img/icone.jpg" style="width:20px" >
+<h1 style="color:blue;font-size:75px;">HONO</h1>
 
-# Tic-Tac
-Put a deadline for payment on a project that you have coded or put a deadline to be called each time for system maintenance XP **[Am not responsible in the bad use of this project]**
+# Introduction
+It makes me sick and sad when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
+
+The important thing, you need to know here is that, with this button, you will increase your traffic, because, more customer will try their chance and can propose you price, you will agree.
 
 ## How it work?
-A date format and a deadline are given in parameter to the system TicTac which evaluates whether or not the deadline has already arrived or not. If so then it hides the style and script of the page of the visitor momentarily for an unreadable rendition so that we do not call the developer again
+Hono connects the Customer who wants to offer a price that is affordable for a product and the seller in two steps, first, it verifies that the margin of reduction of the seller card with what the customer proposes then, send the information of the customer to the seller and the price the customer wants for the product in question, all of which is done using a number of html attributes
 
 ## How to use it:
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-	<title>A webSite Title</title>
-
-	<!-- Put these few lines of code in your HEAD of page before ANY script in your website or hide it in a script -->
-	<script src="https://rawgit.com/Sanix-Darker/Tic-Tac/master/js/tictac.min.js"></script>
-	<script type="text/javascript">
-		/**
-		 * [tictac_options description]
-		 *
-		 * @param  {String} horloge_type (Required) [Date format (en, fr) for users]
-		 * @param  {[type]}  date        (Required) [The date (For 'en' format date use: Month/Day/Year For 'fr' format date use: Day/Month/Year)]
-		 * @param  {Boolean} killCss     (optional) [To Lock or Unlock  only Style]
-		 * @param  {Boolean} killJs      (optional) [To Lock or Unlock  only Script code]
-		 * @param  {Boolean} whitescreen (optional) [To show a WhiteScreen]
-		 *
-		 */
-		var tictac_options = ['en', '07/07/2018'];
-
-		// Kill CSS, Kill JS, don't show White screen
-		//var tictac_options = ['en', '04/05/2018', true, true, false];
-
-		// Show White screen (and kill every thing)
-		//var tictac_options = ['en', '04/05/2018', true, true, true];
-
-
-		// OR REMOTELY : (Not completly stable for now)
-		// var remoteDead = [true, 'http://127.0.0.1/api/finalDateForWebSitedash.txt'];
-
-		/** NOTE: for the Remotely TicTac access, you need to allow the "Access-Control-Allow-Origin" on your website 
-		* [PHP]: <?php header('Access-Control-Allow-Origin: *');
-		*						 header('Access-Control-Allow-Methods': POST, PUT, DELETE, GET, OPTIONS');
-		*						 header('Access-Control-Request-Method': *');
-		*						 header('Access-Control-Allow-Headers': Origin, X-Requested-With, Content-Type, Accept, Authorization');
-		*
-		* [RoR (Ruby On Rails)]: headers['Access-Control-Allow-Origin'] = '*'
-		*						 headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
-		*						 headers['Access-Control-Request-Method'] = '*'
-		*						 headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-		*
-		* [Python]: // THe Same logic
-		*
-		* [C#]: // THe Same logic
-		*/
-	
-
-		/**
-		 * [checkDate description]
-		 *
-		 * Default use: checkDate(tictac_options);
-		 *
-		 * Remotely use: checkDate(tictac_options, [true, 'https://My_Secret_Hosting_DateLine.com/finalDateForWebSitedash.txt']);
-		 * @param  {Array}   remoteDead  (optional) [To access a Hosted date Ex: [false, 'https://My_Secret_Hosting_DateLine.com/finalDateForWebSitedash.txt']  in the file respect this format en, 04/06/2018 ]
-		 *
-		 */
-		checkDate(tictac_options);
-
-	</script>
+	<title>Your Product page</title>
 </head>
 	<body>
+		...
+		<button>Add to Cart</button>
+		...
+		<!-- Include the Hono Button Configuration -->
+		<span id="div_hono" data-emailseller = "test@gmail.com"
+					data-product-image ="products.jpg"
+					data-product-title ="Wolfpack Jacket - Black"
+					data-product-currency ="USD" 
+					data-product-amount ="1,599.95"
+					data-product-margin-amount ="20" 
+					data-button-lang ="en"
+					></span>
 
 		...
-
+		<!-- Include the Hono script -->
+		<script type="text/javascript" src="hono.min.js"></script>
+		<!-- And it's ALL -->
 	</body>
 </html>
 
 ```
+## Attributes and explanations:
+<table border="2">
+	<tr>
+		<th> Required </th>
+		<th style="min-width:190px;"> Attribute </th>
+		<th> Description </th>
+		<th> Type </th>
+	</tr>
+	<tr>
+		<td>yes</td>
+		<td>data-emailseller</td>
+		<td>This attribute contains the email of the seller, Hono will use it to send the mail.</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>yes</td>
+		<td>data-product-image</td>
+		<td>this attribute contains the path of th image(The absolute path)</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>yes</td>
+		<td>data-product-title</td>
+		<td>This attibute contains the title of the product</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>yes</td>
+		<td>data-product-currency</td>
+		<td>This attribute contain the currency of the product</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>yes</td>
+		<td>data-product-amount</td>
+		<td>This attribute contains the amount/price of the product</td>
+		<td>Float</td>
+	</tr>
+	<tr>
+		<td>yes</td>
+		<td>data-product-margin-amount</td>
+		<td>This attribute contain the reduction marge to apply on the amount, it's what Hono will use to control if what the customer enter is in the acceptable marge of the amount that the seller want</td>
+		<td>Float</td>
+	</tr>
+	<tr>
+		<td>no</td>
+		<td>data-button-lang</td>
+		<td>This attribute control all the language of the Hono systeme, now it's can work with: en, fr, sp, ge</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>no</td>
+		<td>data-number-trying</td>
+		<td>This attibute is the limit number that is allow to a customer to hit his amount proposition in the modal</td>
+		<td>Int</td>
+	</tr>
+	<tr>
+		<td>no</td>
+		<td>data-autoload-action</td>
+		<td>This attribute control the way the button will appear</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>no</td>
+		<td>data-button-position</td>
+		<td>this attribute set the button position we have (standard, float-left and float-right)</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>no</td>
+		<td>data-button-css</td>
+		<td>If you have a personnal style you want to add on Hono Button this attribute is for you</td>
+		<td>String</td>
+	</tr>
+	<tr>
+		<td>no</td>
+		<td>data-button-class</td>
+		<td>If you have a personnal class you want to add on Hono Button this attribute is for you</td>
+		<td>String</td>
+	</tr>
+</table>
 
 ### Authors / Contributors:
 <a href="https://github.com/Sanix-Darker"> Sanix Darker </a>
 
-### Captures before and after the dead line with Tic-Tac:
+### How it's work with the Customer and the email received by the Seller:
 <table style="width: 100%;">
 	<tr>
-		<td style="width: 50%">
-			<img src="img/capture.PNG" >
+		<td colspan="2">
+			<img src="img/Hono.gif" >
 		</td>
-		<td >
-			<img src="img/capture1.PNG" >
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="img/Capture.PNG" >
 		</td>
 	</tr>
 </table>
-
-**Tic Tac affect any files in your website juste the user render**
