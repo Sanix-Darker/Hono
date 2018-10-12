@@ -3,7 +3,7 @@
 # Introduction
 It makes me sick and sad when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
 
-### *The important thing, you need to know here is that, with this button, you will increase your traffic, because, more customer will try their chance and can propose you price, you will agree.*
+### *The important thing, you need to know here is that, with this button, you will increase your traffic, because, more customer will try their chance and can propose you a suitable amount for you too as the seller.*
 
 ## How it work?
 Hono connects the Customer who wants to offer a price that is affordable for a product and the seller in two steps, first, it verifies that the margin of reduction of the seller card with what the customer proposes then, send the information of the customer to the seller and the price the customer wants for the product in question, all of which is done using a number of html attributes
