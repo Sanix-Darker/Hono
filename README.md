@@ -19,13 +19,19 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 		...
 		<button>Add to Cart</button>
 		...
-		<!-- Include the Hono Button Configuration -->
+		<!-- Include the Hono Button (Most Important) Configurations -->
+		<!-- data-emailseller : Seller's Email / L'email du vendeur -->
+		<!-- data-product-title : Product's Title / Le nom/titre du produit/article -->
+		<!-- data-product-currency : Product's currency / La monaie du produit -->
+		<!-- data-product-amount : Product's amount / Le prix du produit -->
+		<!-- data-product-margin-amount : Amount's margin of the product / La marge ou le pourcentage de reduction en % -->
+		<!-- data-emailseller : Seller's Email / L'email du vendeur -->
+		
 		<span id="div_hono" data-emailseller = "test@gmail.com"
 					data-product-title ="Wolfpack Jacket - Black"
 					data-product-currency ="USD" 
 					data-product-amount ="1,599.95"
 					data-product-margin-amount ="20" 
-					data-button-lang ="en"
 					></span>
 
 		...
