@@ -122,7 +122,8 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 ### Authors / Contributors:
 <a href="https://github.com/Sanix-Darker"> Sanix Darker </a>
 
-### How it's work with the Customer and the email received by the Seller:
+### How it's work with the Customer haggling his amount and the email received by the Seller:
+You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *But you need to change the emailseller attribute to receive the mail as the seller.*
 <table style="width: 100%;">
 	<tr>
 		<td colspan="2">
