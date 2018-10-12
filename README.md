@@ -1,4 +1,4 @@
-<h1 style="color:blue;font-size:75px;">HONO - haggle the world</h1>
+<h1>HONO - haggle the world</h1>
 
 # Introduction
 It makes me sick and sad when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
@@ -21,7 +21,6 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 		...
 		<!-- Include the Hono Button Configuration -->
 		<span id="div_hono" data-emailseller = "test@gmail.com"
-					data-product-image ="products.jpg"
 					data-product-title ="Wolfpack Jacket - Black"
 					data-product-currency ="USD" 
 					data-product-amount ="1,599.95"
@@ -31,7 +30,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 
 		...
 		<!-- Include the Hono script -->
-		<script type="text/javascript" src="hono.min.js"></script>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/hono.min.js"></script>
 		<!-- And it's ALL -->
 	</body>
 </html>
@@ -52,9 +51,9 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 		<td>String</td>
 	</tr>
 	<tr>
-		<td>yes</td>
+		<td>no</td>
 		<td>data-product-image</td>
-		<td>this attribute contains the path of th image(The absolute path)</td>
+		<td>This attribute contains the path of th image(The absolute path)</td>
 		<td>String</td>
 	</tr>
 	<tr>
