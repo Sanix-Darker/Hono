@@ -4,9 +4,11 @@
 It makes me sick and sad when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
 
 ### *The important thing, you need to know here is that, with this button, you will increase your traffic, because, more customer will try their chance and can propose you a suitable amount for you too as the seller.*
+<hr>
 
 ## How it work?
 Hono connects the Customer who wants to offer a price that is affordable for a product and the seller in two steps, first, it verifies that the margin of reduction of the seller card with what the customer proposes then, send the information of the customer to the seller and the price the customer wants for the product in question, all of which is done using a number of html attributes
+<hr>
 
 ## How to use it:
 ```html
@@ -42,6 +44,34 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 </html>
 
 ```
+<hr>
+
+## Hono's Button Preconfiguration Classes
+```css 
+	/*
+	* Hono Styles buttons
+	* You just have to add classes in the attribute: "data-button-class"
+	*
+	* // Fade Style
+	* Example: data-button-class = "honobtnFade honobtnBlueGreen"
+	*
+	* // Push Style
+	* Example: data-button-class = "honobtnPush honobtnBlueGreen"
+	*
+	* // Border Style
+	* Example: data-button-class = "honobtnBorder honobtnBlueGreen"
+	*/
+```
+#### Fade Style
+<img src="img/bluebutton.PNG"> &nbsp; <img src="img/greenbutton.PNG"> &nbsp; <img src="img/orangebutton.PNG"> &nbsp; <img src="img/purplebutton.PNG"><br>
+
+#### Push Style
+<img src="img/pushbluebutton.PNG"> &nbsp; <img src="img/pushgreenbutton.PNG"> &nbsp; <img src="img/pushorangebutton.PNG"> &nbsp; <img src="img/pushpurplebutton.PNG"><br>
+
+#### Border Style
+<img src="img/borderbluebutton.PNG"> &nbsp; <img src="img/bordergreenbutton.PNG"> &nbsp; <img src="img/borderorangebutton.PNG"> &nbsp; <img src="img/borderpurplebutton.PNG"><br>
+<hr>
+
 ## Attributes and explanations:
 <table border="1">
 	<tr>
@@ -123,9 +153,11 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 		<td>String</td>
 	</tr>
 </table>
+<hr>
 
 ### Authors / Contributors:
 <a href="https://github.com/Sanix-Darker"> Sanix Darker </a>
+<hr>
 
 ### How it's work with the Customer haggling his amount and the email received by the Seller:
 You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *But you need to change the emailseller attribute to receive the mail as the seller.*

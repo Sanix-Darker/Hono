@@ -1,0 +1,14 @@
+{
+  "name": "Hono",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sanix-Darker/Hono"
+  },
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "author": "Sanix Darker",
+  "dependencies": {
+  }
+}
