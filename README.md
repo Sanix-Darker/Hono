@@ -131,7 +131,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 	<tr>
 		<td>no</td>
 		<td>data-autoload-action</td>
-		<td>This attribute control the way the button will appear</td>
+		<td>This attribute control the way the button will appear ('onclosepage' [The button will appear if the customer try to close the page and cancel it in the end] , 'onclick' [This is the default value] , 'onCallBack' [The button will appear by calling the function 'honolaunch()' ], 'onwait-10' [This value is to configure a timeout before the button appear])</td>
 		<td>String</td>
 	</tr>
 	<tr>
