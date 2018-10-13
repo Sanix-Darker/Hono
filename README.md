@@ -46,21 +46,21 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 ```
 <hr>
 
-## Hono's Button Preconfiguration Classes
+## Hono's Button Preconfigurations Classes
 ```css 
-	/*
-	* Hono Styles buttons
-	* You just have to add classes in the attribute: "data-button-class"
-	*
-	* // Fade Style
-	* Example: data-button-class = "honobtnFade honobtnBlueGreen"
-	*
-	* // Push Style
-	* Example: data-button-class = "honobtnPush honobtnBlueGreen"
-	*
-	* // Border Style
-	* Example: data-button-class = "honobtnBorder honobtnBlueGreen"
-	*/
+/*
+* Hono Styles buttons
+* You just have to add classes in the attribute: "data-button-class"
+*
+* // Fade Style
+* Example: data-button-class = "honobtnFade honobtnBlueGreen"
+*
+* // Push Style
+* Example: data-button-class = "honobtnPush honobtnBlueGreen"
+*
+* // Border Style
+* Example: data-button-class = "honobtnBorder honobtnBlueGreen"
+*/
 ```
 #### Fade Style
 <img src="img/bluebutton.PNG"> &nbsp; <img src="img/greenbutton.PNG"> &nbsp; <img src="img/orangebutton.PNG"> &nbsp; <img src="img/purplebutton.PNG"><br>
