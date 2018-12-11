@@ -1,6 +1,8 @@
-<h1>HONO - haggle the world</h1>
+<img src="https://cdn0.iconfinder.com/data/icons/online-shopping-flat/64/14_money-buy-box-exchange-currency-26-512.png"/>
 
-# Introduction
+# HONO - haggle the world
+
+## Introduction
 It makes me sick and sad when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, or, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
 
 ### *The important thing, you need to know here is that, with this button, you will increase your traffic, because, more customer will try their chance and can propose you a suitable amount for you too as the seller.*
