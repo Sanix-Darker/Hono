@@ -429,52 +429,31 @@ var slidedingBox2 = function(){
 			setCookie("hono_email", document.getElementById('hono_Email').value, 30);
 		}
 
-
-		// Email.send({
-		// 	Host : "smtp.elasticemail.com",
-		// 	Username : "saadjioa@gmail.com",
-		// 	Password : "17f82b3a-5e97-4200-8117-cf140951ba69",
-		// 	To : div_hono_emailseller,
-		// 	From : "honobutton@gmail.com",
-		// 	Subject : "HONO - ["+document.getElementById('myprice').value+"] "+div_hono_product_title,
-		// 	Body : 					"<h4><u>HONOSYSTEMS</u></h4><br>"+
-		// 	langValue("EMAIL_HELLO_MESSAGE")+":<br><hr>"+
-		// 	"<b>"+langValue("EMAIL_INTITULE_ARTICLE")+":</b> "+window.location.hostname+" -- <a href="+location.href+" target='_blank'>"+div_hono_product_title+"</a><br>"+
-		// 	"<b>"+langValue("EMAIL_INTITULE_AMOUNT")+":</b> "+div_hono_product_amount+" "+div_hono_product_currency+"<br>"+
-		// 	"<b>"+langValue("EMAIL_INTITULE_PROPOSITION")+":</b> "+document.getElementById('myprice').value+" "+div_hono_product_currency+"<br>"+
-		// 	"<b>"+langValue("EMAIL_INTITULE_EMAIL")+":</b> "+document.getElementById('hono_Email').value+"<br>"+
-		// 	"<b>"+langValue("EMAIL_INTITULE_NUMERO")+":</b> "+document.getElementById('hono_numeroTel').value+"<br>"+
-		// 	"<b>"+langValue("EMAIL_INTITULE_MESSAGE")+":</b><br> <i>'"+size_word(document.getElementById('hono_Message').value, 200)+"'</i><br><hr>"+
-		// 	langValue("EMAIL_JOIN_TCHAT_MESSAGE1")+' <a target="_blank" href="https://jeveutchat.herokuapp.com/chat.html?name=Seller&room='+getCurrentHonoKey()+'">'+langValue("EMAIL_JOIN_TCHAT_MESSAGE2")+'</a><br><br>'+
-		// 	'<i><small style="font-size:12px;">'+datetime+' By Hono</small></i>'
-		// }).then(
-		//   message => {
-		// 	honoLOG(message);
-		// 	honoLOG("Mail send.");
-		//   }
-		// );
-
 		// Envoi du mail
-		Email.send("honobutton@gmail.com",
-					div_hono_emailseller,
-					"HONO - ["+document.getElementById('myprice').value+"] "+div_hono_product_title,
-					"<h4><u>HONOSYSTEMS</u></h4><br>"+
-					langValue("EMAIL_HELLO_MESSAGE")+":<br><hr>"+
-					"<b>"+langValue("EMAIL_INTITULE_ARTICLE")+":</b> "+window.location.hostname+" -- <a href="+location.href+" target='_blank'>"+div_hono_product_title+"</a><br>"+
-					"<b>"+langValue("EMAIL_INTITULE_AMOUNT")+":</b> "+div_hono_product_amount+" "+div_hono_product_currency+"<br>"+
-					"<b>"+langValue("EMAIL_INTITULE_PROPOSITION")+":</b> "+document.getElementById('myprice').value+" "+div_hono_product_currency+"<br>"+
-					"<b>"+langValue("EMAIL_INTITULE_EMAIL")+":</b> "+document.getElementById('hono_Email').value+"<br>"+
-					"<b>"+langValue("EMAIL_INTITULE_NUMERO")+":</b> "+document.getElementById('hono_numeroTel').value+"<br>"+
-					"<b>"+langValue("EMAIL_INTITULE_MESSAGE")+":</b><br> <i>'"+size_word(document.getElementById('hono_Message').value, 200)+"'</i><br><hr>"+
-					langValue("EMAIL_JOIN_TCHAT_MESSAGE1")+' <a target="_blank" href="https://jeveutchat.herokuapp.com/chat.html?name=Seller&room='+getCurrentHonoKey()+'">'+langValue("EMAIL_JOIN_TCHAT_MESSAGE2")+'</a><br><br>'+
-					'<i><small style="font-size:12px;">'+datetime+' By Hono</small></i>',
-				    {
-				        token: "511dcd67-1dc0-49c1-91c1-c867594e9af6",
-				        callback: function done(message) { 
-						 	honoLOG(message);
-						 	honoLOG("Mail send.");
-				        }
-				    });
+		Email.send({
+			Host : "smtp.elasticemail.com",
+			Username : "saadjioa@gmail.com",
+			Password : "17f82b3a-5e97-4200-8117-cf140951ba69",
+			To : div_hono_emailseller,
+			From : "honobutton@gmail.com",
+			Subject : "HONO - ["+document.getElementById('myprice').value+"] "+div_hono_product_title,
+			Body : "<h4><u>HONOSYSTEMS</u></h4><br>"+
+			langValue("EMAIL_HELLO_MESSAGE")+":<br><hr>"+
+			"<b>"+langValue("EMAIL_INTITULE_ARTICLE")+":</b> "+window.location.hostname+" -- <a href="+location.href+" target='_blank'>"+div_hono_product_title+"</a><br>"+
+			"<b>"+langValue("EMAIL_INTITULE_AMOUNT")+":</b> "+div_hono_product_amount+" "+div_hono_product_currency+"<br>"+
+			"<b>"+langValue("EMAIL_INTITULE_PROPOSITION")+":</b> "+document.getElementById('myprice').value+" "+div_hono_product_currency+"<br>"+
+			"<b>"+langValue("EMAIL_INTITULE_EMAIL")+":</b> "+document.getElementById('hono_Email').value+"<br>"+
+			"<b>"+langValue("EMAIL_INTITULE_NUMERO")+":</b> "+document.getElementById('hono_numeroTel').value+"<br>"+
+			"<b>"+langValue("EMAIL_INTITULE_MESSAGE")+":</b><br> <i>'"+size_word(document.getElementById('hono_Message').value, 200)+"'</i><br><hr>"+
+			langValue("EMAIL_JOIN_TCHAT_MESSAGE1")+' <a target="_blank" href="https://jeveutchat.herokuapp.com/chat.html?name=Seller&room='+getCurrentHonoKey()+'">'+langValue("EMAIL_JOIN_TCHAT_MESSAGE2")+'</a><br><br>'+
+			'<i><small style="font-size:12px;">'+datetime+' By Hono</small></i>'
+		}).then(
+		  message => {
+			honoLOG(message);
+			honoLOG("Mail send.");
+		  }
+		);
+
 		setCookie("hono_done_here"+getCurrentHonoKey(), 1, 30);
 	}else{
 		alert("FILL_CORRECTLY_FORMMAIL");
