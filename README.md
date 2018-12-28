@@ -18,7 +18,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 	<title>Your Product page</title>
 
 	<!-- Include the Hono's CSS file -->
-	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/hono.css">
+	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/assets/css/hono.css">
 
 </head>
 	<body>
@@ -45,7 +45,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 		...
 
 		<!-- Include the Hono's JS script -->
-		<script type="text/javascript" src="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/hono.min.js"></script>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/assets/js/hono.min.js"></script>
 		<!-- And it's ALL -->
 
 	</body>
@@ -251,3 +251,6 @@ You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *B
 - <a href="https://github.com/Sanix-Darker">SOURCE CODE</a><br>
 - <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>
  
+### LICENSE:
+
+[MIT License](https://github.com/Sanix-Darker/hono/blob/master/LICENSE)
