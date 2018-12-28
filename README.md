@@ -1,11 +1,9 @@
-<img src="https://cdn0.iconfinder.com/data/icons/online-shopping-flat/64/14_money-buy-box-exchange-currency-26-512.png"/>
+<h1>HONO - haggle the world</h1>
 
-# HONO - haggle the world
+# Introduction
+It makes me *"sick"* and *"sad"* when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, or, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
 
-## Introduction
-It makes me sick and sad when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, or, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
-
-### *The important thing, you need to know here is that, with this button, you will increase your traffic, because, more customer will try their chance and can propose you a suitable amount for you too as the seller.*
+### *The important thing, you need to know here is that, with this button, you will INCREASE your traffic, because, more customer will try their chance and can propose you a suitable amount for you too as the seller.*
 <hr>
 
 ## How it work?
@@ -20,7 +18,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 	<title>Your Product page</title>
 
 	<!-- Include the Hono's CSS file -->
-	<link rel="stylesheet" type="text/css" href="hono.css">
+	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/hono.css">
 
 </head>
 	<body>
@@ -52,85 +50,84 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 
 	</body>
 </html>
-
 ```
 <hr>
 
 ## Hono's Button Preconfigurations Classes
 ```css 
-/*
-* Hono Styles buttons
-* You just have to add classes in the attribute: "data-button-class"
-*
-* // Fade Style
-* Example: data-button-class = "honobtnFade honobtnBlueGreen"
-*
-* // Push Style
-* Example: data-button-class = "honobtnPush honobtnBlueGreen"
-*
-* // Border Style
-* Example: data-button-class = "honobtnBorder honobtnBlueGreen"
-*/
+	/*
+	* Hono Styles buttons
+	* You just have to add classes in the attribute: "data-button-class"
+	*
+	* // Fade Style
+	* Example: data-button-class = "honobtnFade honobtnBlueGreen"
+	*
+	* // Push Style
+	* Example: data-button-class = "honobtnPush honobtnBlueGreen"
+	*
+	* // Border Style
+	* Example: data-button-class = "honobtnBorder honobtnBlueGreen"
+	*/
 ```
 #### Fade Style (Without animation on Hover)
-<img src="img/bluebutton.PNG"> &nbsp; <img src="img/greenbutton.PNG"> &nbsp; <img src="img/orangebutton.PNG"> &nbsp; <img src="img/purplebutton.PNG"><br>
+<img src="assets/img/bluebutton.PNG"> &nbsp; <img src="assets/img/greenbutton.PNG"> &nbsp; <img src="assets/img/orangebutton.PNG"> &nbsp; <img src="assets/img/purplebutton.PNG"><br>
 
 #### Push Style *(With animation on Hover)*
-<img src="img/pushbluebutton.PNG"> &nbsp; <img src="img/pushgreenbutton.PNG"> &nbsp; <img src="img/pushorangebutton.PNG"> &nbsp; <img src="img/pushpurplebutton.PNG"><br>
+<img src="assets/img/pushbluebutton.PNG"> &nbsp; <img src="assets/img/pushgreenbutton.PNG"> &nbsp; <img src="assets/img/pushorangebutton.PNG"> &nbsp; <img src="assets/img/pushpurplebutton.PNG"><br>
 
 #### Border Style *(With animation on Hover)*
-<img src="img/borderbluebutton.PNG"> &nbsp; <img src="img/bordergreenbutton.PNG"> &nbsp; <img src="img/borderorangebutton.PNG"> &nbsp; <img src="img/borderpurplebutton.PNG"><br>
+<img src="assets/img/borderbluebutton.PNG"> &nbsp; <img src="assets/img/bordergreenbutton.PNG"> &nbsp; <img src="assets/img/borderorangebutton.PNG"> &nbsp; <img src="assets/img/borderpurplebutton.PNG"><br>
 <hr>
 
 
 ## Hono's Modal personnalizations
 ```css 
-/**
- * ----------------------------------------------
- * You can personnalize the elements in the Modal
- * Allready Present in the hono.css, you just have to configure them
- * ----------------------------------------------
- */
+	/**
+	* ----------------------------------------------
+	* You can personnalize the elements in the Modal
+	* Allready Present in the hono.css, you just have to configure them
+	* ----------------------------------------------
+	*/
 
-/* The Price/Amount input's Style */
-#hono_modal #myprice{
-	/* Your style here */
-}
+	/* The Price/Amount input's Style */
+	#hono_modal #myprice{
+		/* Your style here */
+	}
 
-/* The Title's style of the modal*/
-#hono_modal #hono_prix_box h3{
-	/* Your style here */
-}
+	/* The Title's style of the modal*/
+	#hono_modal #hono_prix_box h3{
+		/* Your style here */
+	}
 
-/* The Currency Style */
-#hono_modal span#currency{
-	/* Your style here */
-}
+	/* The Currency Style */
+	#hono_modal span#currency{
+		/* Your style here */
+	}
 
-/*The Next Step button's style */
-#hono_modal #hono_suivant{
-	/* Your style here */
-}
+	/*The Next Step button's style */
+	#hono_modal #hono_suivant{
+		/* Your style here */
+	}
 
-/*The Send button's style */
-#hono_modal #hono_envoyer{
-	/* Your style here */
-}
+	/*The Send button's style */
+	#hono_modal #hono_envoyer{
+		/* Your style here */
+	}
 
-/*The Phone number input's style */
-#hono_modal #hono_numeroTel{
-	/* Your style here */
-}
+	/*The Phone number input's style */
+	#hono_modal #hono_numeroTel{
+		/* Your style here */
+	}
 
-/*The Email input's style */
-#hono_modal #hono_Email{
-	/* Your style here */
-}
+	/*The Email input's style */
+	#hono_modal #hono_Email{
+		/* Your style here */
+	}
 
-/*The Message Textarea's style */
-#hono_modal #hono_Message{
-	/* Your style here */
-}
+	/*The Message Textarea's style */
+	#hono_modal #hono_Message{
+		/* Your style here */
+	}
 ```
 <hr>
 
@@ -226,30 +223,31 @@ You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *B
 	<tr><td><br>Customer's Test<br></td></tr>
 	<tr>
 		<td colspan="2">
-			<img src="img/Hono.gif" >
+			<img src="assets/img/Hono.gif" >
 		</td>
 	</tr>
 	<tr><td><br>Inbox's Email of the Seller, _*LOOK AT YOUR SPAM TOO*_ <br></td></tr>
 	<tr>
 		<td colspan="2">
-			<img src="img/Capture.PNG" >
+			<img src="assets/img/Capture.PNG" >
 		</td>
 	</tr>
 	<tr><td><br>Hono's TCHAT platform<br></td></tr>
 	<tr>
 		<td colspan="2">
-			<img src="img/Capture2.PNG" >
+			<img src="assets/img/Capture2.PNG" >
 		</td>
 	</tr>
 </table>
 <hr>
 
-### Authors / Contributors:
+### Author:
 <a href="https://github.com/Sanix-Darker"> Sanix Darker </a>
 <hr>
 
-### SOURCE CODE / DEMO:
+### SOURCES:
 
-<a href="https://github.com/Sanix-Darker">SOURCE CODE</a><br>
-<a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>
+- <a href="https://sanix-darker.github.io/Hono/docs/">DOCUMENTATION</a><br>
+- <a href="https://github.com/Sanix-Darker">SOURCE CODE</a><br>
+- <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>
  

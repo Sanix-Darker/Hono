@@ -1,6 +1,7 @@
 {
   "name": "Hono",
-  "main": "server.js",
+  "version": "0.0.1",
+  "description": "A button for Haggling price on EShop WebSite",
   "repository": {
     "type": "git",
     "url": "https://github.com/Sanix-Darker/Hono"

@@ -57,3 +57,33 @@
         width: calc(100% - 5rem);
     }
 }
+
+/**
+ * ----------------------------------------------
+ * You can personnalize the elements in the Modal
+ * ----------------------------------------------
+ */
+
+/* The Price/Amount input's Style */
+#hono_modal #myprice{ }
+
+/* The Title's style of the modal*/
+#hono_modal #hono_prix_box h3{ }
+
+/* The Currency Style */
+#hono_modal span#currency{ }
+
+/*The Next Step button's style */
+#hono_modal #hono_suivant{ }
+
+/*The Send button's style */
+#hono_modal #hono_envoyer{ }
+
+/*The Phone number input's style */
+#hono_modal #hono_numeroTel{ }
+
+/*The Email input's style */
+#hono_modal #hono_Email{ }
+
+/*The Message Textarea's style */
+#hono_modal #hono_Message{ }
