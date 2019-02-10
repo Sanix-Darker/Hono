@@ -54,6 +54,8 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 <hr>
 
 ## Hono's Button Preconfigurations Classes
+
+#### Fade Style (Without animation on Hover)
 ```css 
 /*
 * Hono Styles buttons
@@ -63,33 +65,30 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 * Example: data-button-class = "honobtnFade honobtnBlueGreen"
 * Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
 ```
-#### Fade Style (Without animation on Hover)
 <img src="assets/img/bluebutton.PNG"> &nbsp; 
 <img src="assets/img/greenbutton.PNG"> &nbsp; 
 <img src="assets/img/orangebutton.PNG"> &nbsp; 
 <img src="assets/img/purplebutton.PNG"><br>
 
-
+#### Push Style *(With animation on Hover)*
 ```css
 /*
 * // Push Style
 * Example: data-button-class = "honobtnPush honobtnBlueGreen"
 * Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
 ```
-#### Push Style *(With animation on Hover)*
 <img src="assets/img/pushbluebutton.PNG"> &nbsp; 
 <img src="assets/img/pushgreenbutton.PNG"> &nbsp; 
 <img src="assets/img/pushorangebutton.PNG"> &nbsp; 
 <img src="assets/img/pushpurplebutton.PNG"><br>
 
-
+#### Border Style *(With animation on Hover)*
 ```css
 /*
 * // Border Style
 * Example: data-button-class = "honobtnBorder honobtnBlueGreen"
 * Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
 ```
-#### Border Style *(With animation on Hover)*
 <img src="assets/img/borderbluebutton.PNG"> &nbsp; 
 <img src="assets/img/bordergreenbutton.PNG"> &nbsp; 
 <img src="assets/img/borderorangebutton.PNG"> &nbsp; 
@@ -270,14 +269,14 @@ You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *B
 <hr>
 
 ### Author:
-<a href="https://github.com/Sanix-Darker"> Sanix Darker </a>
+<a href="https://github.com/Sanix-Darker"> 🐼 Sanix Darker </a>
 <hr>
 
 ### SOURCES:
 
 - <a href="https://sanix-darker.github.io/Hono/docs/">DOCUMENTATION</a><br>
 - <a href="https://github.com/Sanix-Darker">SOURCE CODE</a><br>
-- <a href="https://sanix-darker.github.io/Hono/product_page.html">DEMO HERE</a>
+- <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>
 
 ### TODO:
 
