@@ -217,6 +217,18 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 </table>
 <hr>
 
+### Responsive render
+<table style="width: 100%;">
+	<tr>
+		<td><img src="assets/img/q.PNG"></td>
+		<td><img src="assets/img/w.PNG"></td>
+		<td><img src="assets/img/e.PNG"></td>
+		<td><img src="assets/img/r.PNG"></td>
+		<td><img src="assets/img/t.PNG"></td>
+	</tr>
+</table>
+<hr>
+
 ### How it's work with the Customer haggling his amount and the email received by the Seller:
 You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *But you need to change the emailseller attribute to receive the mail as the seller.*
 <table style="width: 100%;">
@@ -249,7 +261,7 @@ You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *B
 
 - <a href="https://sanix-darker.github.io/Hono/docs/">DOCUMENTATION</a><br>
 - <a href="https://github.com/Sanix-Darker">SOURCE CODE</a><br>
-- <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>
+- <a href="https://sanix-darker.github.io/Hono/product_page.html">DEMO HERE</a>
 
 ### TODO:
 

@@ -126,7 +126,7 @@ var image_logo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAAGv
  * --------------------------------------------------------------------------------------
 */
 // Functions
-/* SmtpJS.com - v2.0.1 */
+/* SmtpJS.com - v3.0.0 */
 var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
 
 var a; // A useless Variable LOL
@@ -431,9 +431,7 @@ var slidedingBox2 = function(){
 
 		// Envoi du mail
 		Email.send({
-			Host : "smtp.elasticemail.com",
-			Username : "saadjioa@gmail.com",
-			Password : "17f82b3a-5e97-4200-8117-cf140951ba69",
+			SecureToken : "fc591fd1-3bb9-442a-a733-82585edb89a5",
 			To : div_hono_emailseller,
 			From : "honobutton@gmail.com",
 			Subject : "HONO - ["+document.getElementById('myprice').value+"] "+div_hono_product_title,
@@ -448,7 +446,7 @@ var slidedingBox2 = function(){
 			langValue("EMAIL_JOIN_TCHAT_MESSAGE1")+' <a target="_blank" href="https://jeveutchat.herokuapp.com/chat.html?name=Seller&room='+getCurrentHonoKey()+'">'+langValue("EMAIL_JOIN_TCHAT_MESSAGE2")+'</a><br><br>'+
 			'<i><small style="font-size:12px;">'+datetime+' By Hono</small></i>'
 		}).then(
-		  message => {
+		 message => {
 			honoLOG(message);
 			honoLOG("Mail send.");
 		  }
