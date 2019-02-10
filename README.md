@@ -23,9 +23,9 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 </head>
 	<body>
 		
-		...
-		<button>Add to Cart</button>
-		...
+		...................
+		<button>Add to Cart Button</button>
+		...................
 
 		<!-- Include the Hono Button (Most Important) Configurations -->
 		<!-- data-emailseller : Seller's Email / L'email du vendeur -->
@@ -45,7 +45,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 		...
 
 		<!-- Include the Hono's JS script -->
-		<script type="text/javascript" src="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/assets/js/hono.min.js"></script>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/assets/js/hono.js"></script>
 		<!-- And it's ALL -->
 
 	</body>
@@ -55,89 +55,105 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 
 ## Hono's Button Preconfigurations Classes
 ```css 
-	/*
-	* Hono Styles buttons
-	* You just have to add classes in the attribute: "data-button-class"
-	*
-	* // Fade Style
-	* Example: data-button-class = "honobtnFade honobtnBlueGreen"
-	*
-	* // Push Style
-	* Example: data-button-class = "honobtnPush honobtnBlueGreen"
-	*
-	* // Border Style
-	* Example: data-button-class = "honobtnBorder honobtnBlueGreen"
-	*/
+/*
+* Hono Styles buttons
+* You just have to add classes in the attribute: "data-button-class"
+*
+* // Fade Style
+* Example: data-button-class = "honobtnFade honobtnBlueGreen"
+* Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
 ```
 #### Fade Style (Without animation on Hover)
-<img src="assets/img/bluebutton.PNG"> &nbsp; <img src="assets/img/greenbutton.PNG"> &nbsp; <img src="assets/img/orangebutton.PNG"> &nbsp; <img src="assets/img/purplebutton.PNG"><br>
+<img src="assets/img/bluebutton.PNG"> &nbsp; 
+<img src="assets/img/greenbutton.PNG"> &nbsp; 
+<img src="assets/img/orangebutton.PNG"> &nbsp; 
+<img src="assets/img/purplebutton.PNG"><br>
 
+
+```css
+/*
+* // Push Style
+* Example: data-button-class = "honobtnPush honobtnBlueGreen"
+* Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
+```
 #### Push Style *(With animation on Hover)*
-<img src="assets/img/pushbluebutton.PNG"> &nbsp; <img src="assets/img/pushgreenbutton.PNG"> &nbsp; <img src="assets/img/pushorangebutton.PNG"> &nbsp; <img src="assets/img/pushpurplebutton.PNG"><br>
+<img src="assets/img/pushbluebutton.PNG"> &nbsp; 
+<img src="assets/img/pushgreenbutton.PNG"> &nbsp; 
+<img src="assets/img/pushorangebutton.PNG"> &nbsp; 
+<img src="assets/img/pushpurplebutton.PNG"><br>
 
+
+```css
+/*
+* // Border Style
+* Example: data-button-class = "honobtnBorder honobtnBlueGreen"
+* Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
+```
 #### Border Style *(With animation on Hover)*
-<img src="assets/img/borderbluebutton.PNG"> &nbsp; <img src="assets/img/bordergreenbutton.PNG"> &nbsp; <img src="assets/img/borderorangebutton.PNG"> &nbsp; <img src="assets/img/borderpurplebutton.PNG"><br>
+<img src="assets/img/borderbluebutton.PNG"> &nbsp; 
+<img src="assets/img/bordergreenbutton.PNG"> &nbsp; 
+<img src="assets/img/borderorangebutton.PNG"> &nbsp; 
+<img src="assets/img/borderpurplebutton.PNG"><br>
 <hr>
-
 
 ## Hono's Modal personnalizations
 ```css 
-	/**
-	* ----------------------------------------------
-	* You can personnalize the elements in the Modal
-	* Allready Present in the hono.css, you just have to configure them
-	* ----------------------------------------------
-	*/
+/**
+* ----------------------------------------------
+* You can personnalize the elements in the Modal
+* Allready Present in the hono.css, you just have to configure them
+* ----------------------------------------------
+*/
 
-	/* The Price/Amount input's Style */
-	#hono_modal #myprice{
-		/* Your style here */
-	}
+/* The Price/Amount input's Style */
+#hono_modal #myprice{
+	/* Your style here */
+}
 
-	/* The Title's style of the modal*/
-	#hono_modal #hono_prix_box h3{
-		/* Your style here */
-	}
+/* The Title's style of the modal*/
+#hono_modal #hono_prix_box h3{
+	/* Your style here */
+}
 
-	/* The Currency Style */
-	#hono_modal span#currency{
-		/* Your style here */
-	}
+/* The Currency Style */
+#hono_modal span#currency{
+	/* Your style here */
+}
 
-	/*The Next Step button's style */
-	#hono_modal #hono_suivant{
-		/* Your style here */
-	}
+/*The Next Step button's style */
+#hono_modal #hono_suivant{
+	/* Your style here */
+}
 
-	/*The Send button's style */
-	#hono_modal #hono_envoyer{
-		/* Your style here */
-	}
+/*The Send button's style */
+#hono_modal #hono_envoyer{
+	/* Your style here */
+}
 
-	/*The Phone number input's style */
-	#hono_modal #hono_numeroTel{
-		/* Your style here */
-	}
+/*The Phone number input's style */
+#hono_modal #hono_numeroTel{
+	/* Your style here */
+}
 
-	/*The Email input's style */
-	#hono_modal #hono_Email{
-		/* Your style here */
-	}
+/*The Email input's style */
+#hono_modal #hono_Email{
+	/* Your style here */
+}
 
-	/*The Message Textarea's style */
-	#hono_modal #hono_Message{
-		/* Your style here */
-	}
+/*The Message Textarea's style */
+#hono_modal #hono_Message{
+	/* Your style here */
+}
 ```
 <hr>
 
 ## Attributes and explanations:
 <table border="1">
 	<tr>
-		<th> Required </th>
-		<th style="min-width:190px;"> Attribute </th>
-		<th> Description </th>
-		<th> Type </th>
+		<th> <b>Required</b> </th>
+		<th style="min-width:190px;"> <b>Attribute</b> </th>
+		<th> <b>Description</b> </th>
+		<th> <b>Type</b> </th>
 	</tr>
 	<tr>
 		<td>yes</td>
@@ -265,8 +281,8 @@ You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *B
 
 ### TODO:
 
-	- Adding a config file for smtp server for sending mail (assets/js/hono.js At line [434 - 436] ).
-	- Adding an SMS services same as mail to notify better users.
+- Adding a config file for smtp server for sending mail (assets/js/hono.js At line [434 - 436] ).
+- Adding an SMS services same as mail to notify better users.
 
 ### LICENSE:
 

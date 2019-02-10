@@ -431,7 +431,7 @@ var slidedingBox2 = function(){
 
 		// Envoi du mail
 		Email.send({
-			SecureToken : "fc591fd1-3bb9-442a-a733-82585edb89a5",
+			SecureToken : "387be5f9-0056-4e66-8453-407f28034aa5",
 			To : div_hono_emailseller,
 			From : "honobutton@gmail.com",
 			Subject : "HONO - ["+document.getElementById('myprice').value+"] "+div_hono_product_title,
