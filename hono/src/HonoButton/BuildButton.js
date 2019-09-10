@@ -14,6 +14,8 @@ const ButtonPosition = (position) => {
 	}
 }
 
+export default ButtonPosition;
+
 /**
  * [BuildButton description]
  * @param {[type]} button [description]
