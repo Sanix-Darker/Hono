@@ -1,5 +1,7 @@
 <h1>HONO - haggle the world</h1>
 
+NOTE: This branch is unStable, we are working on it, test on Es5 branch.
+
 # Introduction
 It makes me *"sick"* and *"sad"* when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, or, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
 
