@@ -1,7 +1,7 @@
 /**
- * [IDGenerator description]
+ * [idGenerator description]
  */
-const IDGenerator = () => {
+const idGenerator = () => {
 
 	this.length = 8;
 	this.timestamp = +new Date;
@@ -22,4 +22,4 @@ const IDGenerator = () => {
 	}
 }
 
-export default IDGenerator;
+export default idGenerator;
