@@ -157,12 +157,10 @@ function IDGenerator() {
 	 var ts = this.timestamp.toString();
 	 var parts = ts.split( "" ).reverse();
 	 var id = "";
-	 
 	 for( var i = 0; i < this.length; ++i ) {
 		var index = _getRandomInt( 0, parts.length - 1 );
 		id += parts[index];	 
 	 }
-	 
 	 return id;
 	}
 }
@@ -286,7 +284,7 @@ var windowOnClick = function (event) {
        toggleModal();
    }
 }
-
+window.addEventListener("click", windowOnClick);
 
 /**
  * Cookies Management ////////
@@ -382,8 +380,6 @@ var BuildModal = function(title, amount, margin_amount, currency){
     closeButton.addEventListener("click", toggleModal);
 }
 
-window.addEventListener("click", windowOnClick);
-
 
 var isNumberOrNot = function(str, attributes){
 	return (isNaN(str))? honoLOG(+attributes+" is not a valid number"): a++;
@@ -421,7 +417,7 @@ var slidedingBox2 = function(){
 		display_hide('hono_prix_box', false);
 		display_hide('hono_contact_box', false);
 		display_hide('hono_contact_box_2', true);
-		
+
 		if(document.getElementById('hono_numeroTel').value!=''){
 			setCookie("hono_tel", document.getElementById('hono_numeroTel').value, 30);
 		}
@@ -608,7 +604,7 @@ if(dejaTest != null && dejaTest > 5){
 			}else{
 				alert("HONO > ERROR, check well required parameters! See your Console.");
 			}
-			
+
 		}else{
 			honoLOG("Tetu guy detected");
 		}

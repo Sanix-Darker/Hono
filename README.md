@@ -22,7 +22,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 
 </head>
 	<body>
-		
+
 		...................
 		<button>Add to Cart Button</button>
 		...................
@@ -33,7 +33,6 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 		<!-- data-product-currency : Product's currency / La monaie du produit -->
 		<!-- data-product-amount : Product's amount / Le prix du produit -->
 		<!-- data-product-margin-amount : Amount's margin of the product / La marge ou le pourcentage de reduction en % -->
-		<!-- data-emailseller : Seller's Email / L'email du vendeur -->
 		
 		<span id="div_hono" data-emailseller = "test@gmail.com"
 					data-product-title ="Wolfpack Jacket - Black"
@@ -41,13 +40,11 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 					data-product-amount ="1,599.95"
 					data-product-margin-amount ="20" 
 					></span>
-
 		...
 
 		<!-- Include the Hono's JS script -->
 		<script type="text/javascript" src="https://raw.githubusercontent.com/Sanix-Darker/Hono/master/assets/js/hono.js"></script>
 		<!-- And it's ALL -->
-
 	</body>
 </html>
 ```
@@ -63,7 +60,12 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 *
 * // Fade Style
 * Example: data-button-class = "honobtnFade honobtnBlueGreen"
-* Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
+* Available colors:
+	- honobtnBlueGreen
+	- honobtnLightBlue
+	- honobtnOrange
+	- honobtnPurple
+*/
 ```
 <img src="assets/img/bluebutton.PNG"> &nbsp; 
 <img src="assets/img/greenbutton.PNG"> &nbsp; 
@@ -75,7 +77,12 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 /*
 * // Push Style
 * Example: data-button-class = "honobtnPush honobtnBlueGreen"
-* Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
+* Available colors:
+	- honobtnBlueGreen
+	- honobtnLightBlue
+	- honobtnOrange
+	- honobtnPurple
+*/
 ```
 <img src="assets/img/pushbluebutton.PNG"> &nbsp; 
 <img src="assets/img/pushgreenbutton.PNG"> &nbsp; 
@@ -87,7 +94,12 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 /*
 * // Border Style
 * Example: data-button-class = "honobtnBorder honobtnBlueGreen"
-* Available colors: honobtnBlueGreen honobtnLightBlue honobtnOrange honobtnPurple
+* Available colors:
+	- honobtnBlueGreen
+	- honobtnLightBlue
+	- honobtnOrange
+	- honobtnPurple
+*/
 ```
 <img src="assets/img/borderbluebutton.PNG"> &nbsp; 
 <img src="assets/img/bordergreenbutton.PNG"> &nbsp; 
@@ -98,55 +110,41 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 ## Hono's Modal personnalizations
 ```css 
 /**
-* ----------------------------------------------
+* ------------------------------------------------------------------
 * You can personnalize the elements in the Modal
 * Allready Present in the hono.css, you just have to configure them
-* ----------------------------------------------
+* ------------------------------------------------------------------
 */
 
 /* The Price/Amount input's Style */
-#hono_modal #myprice{
-	/* Your style here */
-}
+#hono_modal #myprice{ }
 
 /* The Title's style of the modal*/
-#hono_modal #hono_prix_box h3{
-	/* Your style here */
-}
+#hono_modal #hono_prix_box h3{ }
 
 /* The Currency Style */
-#hono_modal span#currency{
-	/* Your style here */
-}
+#hono_modal span#currency{ }
 
 /*The Next Step button's style */
-#hono_modal #hono_suivant{
-	/* Your style here */
-}
+#hono_modal #hono_suivant{ }
 
 /*The Send button's style */
-#hono_modal #hono_envoyer{
-	/* Your style here */
-}
+#hono_modal #hono_envoyer{ }
 
 /*The Phone number input's style */
-#hono_modal #hono_numeroTel{
-	/* Your style here */
-}
+#hono_modal #hono_numeroTel{ }
 
 /*The Email input's style */
-#hono_modal #hono_Email{
-	/* Your style here */
-}
+#hono_modal #hono_Email{ }
 
 /*The Message Textarea's style */
-#hono_modal #hono_Message{
-	/* Your style here */
-}
+#hono_modal #hono_Message{ }
 ```
+
 <hr>
 
 ## Attributes and explanations:
+
 <table border="1">
 	<tr>
 		<th> <b>Required</b> </th>
@@ -269,7 +267,7 @@ You can Try the <a href="https://sanix-darker.github.io/Hono/">DEMO HERE</a>, *B
 <hr>
 
 ### Author:
-<a href="https://github.com/Sanix-Darker"> 🐼 Sanix Darker </a>
+- <a href="https://github.com/Sanix-Darker"> 🐼 Sanix Darker </a>
 <hr>
 
 ### SOURCES:
