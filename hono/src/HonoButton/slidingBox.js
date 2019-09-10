@@ -25,7 +25,6 @@ export const step1 = (amount, margin_amount) => {
 	}
 }
 
-
 export const step2 = () => {
 	if(document.getElementById('hono_Email').value != '' && document.getElementById('hono_Message').value != ''){
 		// hono_contact_box_2

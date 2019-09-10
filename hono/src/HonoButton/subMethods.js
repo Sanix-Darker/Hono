@@ -101,3 +101,13 @@ export const getCurrentHonoKey = () => {
 
 	return getCookie("hono_"+location.href+"_key");
 }
+
+
+/**
+ * [List of strings prototype description]
+ */
+String.prototype.replaceAll = (search, replacement) => {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+String.prototype.contains = (it) => { return this.indexOf(it) != -1; };

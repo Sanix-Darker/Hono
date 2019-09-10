@@ -4,7 +4,7 @@
  * -------------------------------------------------------------------------------------
  */
 
-const array_lang_value = {
+const arrayLangValue = {
 	// fr : French
 	"fr": { // French
 		"HONO_BUTTON" : "Négocier le prix",
@@ -108,4 +108,4 @@ const array_lang_value = {
 	}
 };
 
-export default array_lang_value;
+export default arrayLangValue;
