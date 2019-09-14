@@ -7,11 +7,7 @@ class HonoButton extends Component {
         super(props);
 
         this.state = {
-            logs: [], // Array of log for this client
-            step: 0, // Step is a log with type=step and value message
-            estimate_time: "Calculating....",// Estimatetime is a log with type=estimatetime and value is message
-            stop: false, // stop is the status of stopping or starting the python MicroService
-            connected: true // This params determine whetheir if the Serveur is connected or not
+
         }
     }
 

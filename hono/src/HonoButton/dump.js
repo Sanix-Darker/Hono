@@ -13,31 +13,6 @@ var currentdate = new Date(),
 
 window.addEventListener("click", windowOnClick);
 
-
-
-/**
- * [Manage_auto_Load description]
- * This function check the loading Way! Or call back
- */
-function Manage_auto_Load(){
-	if(div_hono_autoload_action == "onclosepage"){
-		window.onbeforeunload = function() {
-			BuildButton(button);
-			return "Do you really want to leave? You can Negociate the price.";
-		};
-	}else if(div_hono_autoload_action == "onCallBack"){
-
-	}else if(div_hono_autoload_action.contains("onwait")){
-		setTimeout(function(){
-			BuildButton(button);
-		}, +(div_hono_autoload_action.replaceAll("onwait-", "")*1000));
-	}else if(div_hono_autoload_action == "onclick"){
-		BuildButton(button);
-	}else{
-		honoLOG("Problem with your 'data-autoload-action' ");
-	}
-}
-
 /**
  * [honolaunch description]
  * @return {[type]} [description]
@@ -46,7 +21,6 @@ function honolaunch(){
 	//The call back to build the button from an external code
 	BuildButton(button);
 }
-
 
 
 /**
@@ -67,7 +41,6 @@ var tetu = getCookie("hono_tetu"+getCurrentHonoKey()),
 // Getting Parameters
 var div_hono = document.getElementById("div_hono"),
 	div_hono_key = getRealValue_or_default(div_hono.getAttribute("data-key"), ''),
-	
 	// Time to appear ...
 
 	// Product informations
@@ -87,7 +60,7 @@ var div_hono = document.getElementById("div_hono"),
 	div_hono_button_css = getRealValue_or_default(div_hono.getAttribute("data-button-css"), ''),
 	div_hono_button_class = getRealValue_or_default(div_hono.getAttribute("data-button-class"), ''),
 	div_hono_button_text = langValue("HONO_BUTTON"), // Chercher en differentes langue aussi
-	
+
 	// From the button on the div Hono
 	div_hono_number_trying = getRealValue_or_default(div_hono.getAttribute("data-number-trying"), 5); // Le nombre d'essaies restant apres que le user propose son prix
 
@@ -157,10 +130,8 @@ if(dejaTest != null && dejaTest > 5){
 			}else{
 				alert("HONO > ERROR, check well required parameters! See your Console.");
 			}
-
 		}else{
 			honoLOG("Tetu guy detected");
 		}
-
 	}
 }

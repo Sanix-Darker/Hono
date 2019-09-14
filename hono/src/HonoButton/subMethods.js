@@ -111,3 +111,28 @@ String.prototype.replaceAll = (search, replacement) => {
     return target.replace(new RegExp(search, 'g'), replacement);
 };
 String.prototype.contains = (it) => { return this.indexOf(it) != -1; };
+
+
+
+/**
+ * [Manage_auto_Load description]
+ * This function check the loading Way! Or call back
+ */
+export const Manage_auto_Load(div_hono_autoload_action){
+	if(div_hono_autoload_action == "onclosepage"){
+		window.onbeforeunload = function() {
+			BuildButton(button);
+			return "Do you really want to leave? You can Negociate the price.";
+		};
+	}else if(div_hono_autoload_action == "onCallBack"){
+
+	}else if(div_hono_autoload_action.contains("onwait")){
+		setTimeout(function(){
+			BuildButton(button);
+		}, +(div_hono_autoload_action.replaceAll("onwait-", "")*1000));
+	}else if(div_hono_autoload_action == "onclick"){
+		BuildButton(button);
+	}else{
+		honoLOG("Problem with your 'data-autoload-action' ");
+	}
+}
