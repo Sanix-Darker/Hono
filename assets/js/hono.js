@@ -514,7 +514,6 @@ var tetu = getCookie("hono_tetu"+getCurrentHonoKey()),
 // Getting Parameters
 var div_hono = document.getElementById("div_hono"),
 	div_hono_key = getRealValue_or_default(div_hono.getAttribute("data-key"), ''),
-	
 	// Time to appear ...
 
 	// Product informations
@@ -534,7 +533,7 @@ var div_hono = document.getElementById("div_hono"),
 	div_hono_button_css = getRealValue_or_default(div_hono.getAttribute("data-button-css"), ''),
 	div_hono_button_class = getRealValue_or_default(div_hono.getAttribute("data-button-class"), ''),
 	div_hono_button_text = langValue("HONO_BUTTON"), // Chercher en differentes langue aussi
-	
+
 	// From the button on the div Hono
 	div_hono_number_trying = getRealValue_or_default(div_hono.getAttribute("data-number-trying"), 5); // Le nombre d'essaies restant apres que le user propose son prix
 
@@ -594,9 +593,9 @@ if(dejaTest != null && dejaTest > 5){
 					button.addEventListener("click", function(event){
 						event.preventDefault();
 						// Building the Modal
-						BuildModal(div_hono_product_title, 
-									div_hono_product_amount, 
-									div_hono_product_margin_amount, 
+						BuildModal(div_hono_product_title,
+									div_hono_product_amount,
+									div_hono_product_margin_amount,
 									div_hono_product_currency);
 						toggleModal();
 					});
