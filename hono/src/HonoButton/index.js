@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
-import array_lang_value from './array_lang_value'
+import array_lang_value from './array_lang_value';
+import Methods from './Methods';
 
 class HonoButton extends Component {
     constructor (props){
