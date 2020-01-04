@@ -1,2 +1,4 @@
 /HonoMail/vendor/
 .history
+.vscode
+.idea
