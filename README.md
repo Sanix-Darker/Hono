@@ -1,16 +1,19 @@
 <h1>HONO - haggle the world</h1>
 
 # Introduction
+
 It makes me *"sick"* and *"sad"* when I come to an online sales site and I find an excellent product, but which I think is a little too expensive and completely unable to offer the seller a discount on it, here it is the most big problems of all online sales sites, no interaction, inert interfaces that do not benefit either the customer or the seller, or, he himself can agree to sell his product with a percentage of reduction, Hono is therefore to resound this great interaction problem that is missing at all ecommerce sites in the world by allowing the customer to offer the price that fits best and thus exchange with the seller.
 
 ### *The important thing, you need to know here is that, with this button, you will INCREASE your traffic, because, more customer will try their chance and can propose you a suitable amount for you too as the seller.*
 <hr>
 
 ## How it work?
+
 Hono connects the Customer who wants to offer a price that is affordable for a product and the seller in two steps, first, it verifies that the margin of reduction of the seller card with what the customer proposes then, send the information of the customer to the seller and the price the customer wants for the product in question, all of which is done using a number of html attributes
 <hr>
 
 ## How to use it:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -53,6 +56,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 ## Hono's Button Preconfigurations Classes
 
 #### Fade Style (Without animation on Hover)
+
 ```css 
 /*
 * Hono Styles buttons
@@ -73,6 +77,7 @@ Hono connects the Customer who wants to offer a price that is affordable for a p
 <img src="assets/img/purplebutton.PNG"><br>
 
 #### Push Style *(With animation on Hover)*
+
 ```css
 /*
 * // Push Style
