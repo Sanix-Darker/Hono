@@ -1,3 +1,5 @@
+<img src="./images/logo.jpg" />
+
 <h1>HONO - haggle the world</h1>
 
 # Introduction
